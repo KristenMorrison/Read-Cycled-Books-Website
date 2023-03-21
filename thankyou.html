@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        function printQuery() {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                document.write(pair[0] + ": " + pair[1] + "<br />");
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Thank You</title>
+</head>
+
+<!--
+		Author: Kristen Morrison
+		Date: March 9, 2023
+		Filename: thankyou.html
+		Assignment: About A Company
+	-->
+
+<body>
+
+<!--side nav bar links-->
+    <nav class="sidenav">
+        <video class="navvideo" width="250"  autoplay loop>
+            <source src="buch.mp4" type="video/mp4">
+          </video> 
+        <a href="index.html">Home</a>
+        <a href="product.html">Shop Books</a>
+        <a href="schedule.html">Order</a>
+    </nav>
+
+     <!--container for lght blue main body of contents-->
+    <div class="background">
+        <header class="headercolor">
+            <h1>Thank You!</h1>
+        </header>
+         <!--main content-->
+        <h2>Please allow 5-7 business days for order processing.</h2>
+        <p>Once your book is located you will receive and e-mail from our friendly customer service team with the
+            availability and price of your item.</p>
+        <script>
+            printQuery();
+        </script>
+
+
+        <!--copyright and company name bottom of main body-->
+        <h5>
+            &copy;Read!cycled Books
+        </h5>
+</div>
+
+ <!--footer moved to bottom of nav bar-->
+    <footer>
+        Contact Us:<br>
+        1255 E. Commercial<br>
+        Springfield, MO 65802 <br>
+        417-862-5000 <br>
+        <a id="email" href="mailto:readcycledbooks@read.com">Read!cycledbooks</a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+}
+
+body {
+    /*main parameters of the webpage. offset the margin to make room for the nav bar*/
+    height: 1400px;
+    margin-left: 10%;
+    background-size: cover;
+    background-image: url(rowbooks.jpg);
+    background-attachment: fixed;
+}
+
+div.background {
+  /*setup of elements for main body area in front of image that is in background*/
+    background-color: #9db5b2;
+    margin: 15%;
+    opacity: 0.9;
+    margin-top: 3%;
+    border: 1px solid antiquewhite;
+
+}
+
+.headercolor {
+     /*Main header colors for all the webpages*/
+    background-color: #0b2027;
+}
+
+h1 {
+      /*Main headers for all the webpages*/
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 75px;
+    color: antiquewhite;
+    background-color: #0b2027;
+
+}
+
+h2 {
+      /*home page 1st header in body*/
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: antiquewhite;
+
+}
+
+h3 {
+     /*home page 2nd header in body*/
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #0b2027;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 27px;
+}
+
+h4 {
+      /*home page bottom header w/ link to book order form*/
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: #0b2027;
+}
+
+h5 {
+     /*home page bottom header for copyright*/
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    color: antiquewhite;
+    padding-bottom: 3%;
+}
+
+#orderlink {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+
+#orderlink:hover {
+    color: #0b2027;
+}
+
+p {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 20px;
+    color: #0b2027;
+
+}
+
+ul {
+    /*index page bullet list*/
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 30%;
+    padding-right: 20%;
+    font-size: 20px;
+    color: #0b2027;
+}
+
+.navvideo {
+    /* created class for the video at top of nav bar to make it stay inside nav bar-responsive to diff. screens*/
+   width: 100%;
+}
+
+.sidenav {
+    /*side navigation bar, created same opacity to match body and main headers */
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0b2027;
+    opacity: 0.9;
+    border-right: 1px solid antiquewhite;
+}
+
+
+.sidenav a {
+    /* side nav bar links properties,, no underline, added hover*/
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    padding: 30% 0% 0% 15%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #9db5b2;
+    display: block;
+}
+
+.sidenav a:hover {
+    /*setting for nav link color when you hover mouse over*/
+    color: antiquewhite;
+}
+
+
+footer {
+    /*contact info nest inside nav bar*/
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: lighter;
+    color: antiquewhite;
+    position: fixed;
+    bottom: 0;
+    left: 0.75%;
+    padding-bottom: 2%;
+}
+
+footer a {
+    color: #9db5b2
+}
+
+footer a:hover {
+    color: antiquewhite;
+}
+
+.grid {
+    /* product.html page-couldn't get right alignment with any positioning method. Was able to find a solution by creating some columns with the help of the internet*/
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div>div {
+     /*equal spaces between the divs in the grid set up for images */
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+.pg2images {
+    /* image height and width so they are all uniform in product page*/
+    width: 80%;
+    height: 150px;
+    padding-left: 10%;
+
+}
+
+.pg2titles {
+     /* font size and type, padding to center titles */
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 10%;
+
+}
+
+.orderForm {
+  /* center order form elements */
+    text-align: center; 
+}
+    
+label {
+    /* font type and color for input labels */
+    color: #0b2027;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+ input, textarea {
+    /* set background and text color for input boxes */
+  background-color: antiquewhite;
+  color: #0b2027;
+  width:35%; 
+  }
+
+select {
+    /* quantity drop down list */
+    background-color: antiquewhite;
+    color: #0b2027;
+    width: 5%;
+    
+}
+
+#zipcode, #state {
+    /* custom width for zip code and state fields*/
+    width: 15%;
+}
+
+#phone {
+     /* custom width for phone number field*/
+    width: 15%
+}
+    
+.submit {
+    /* submit button color and font color*/
+    background-color: #0b2027;
+    color: antiquewhite;
+    width: 10%;
+    
+}
+
+.orderHeaders {
+       /* order form titles-font and font size*/
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#formH5 { 
+    /*had to adjust padding on h5 on form page because form was so long, so it didn't place right under submit button*/
+    padding-top: 5%;
+}
+
+#lastbodyHeader {
+    /* comments box was too far from its header, added padding bottom to bring it up closer*/
+    padding-bottom: 2%;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
